@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="Mandel" name="MandelbrotTS">
+	<description>
+		TK1 - programming assignment 4
+		--------------------------
+		Team Members
+		Faisal Arshad 2611358
+		Hamza Zulfiqar 2976792
+		Muhammad Rameez 2556345
+	  </description>
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="MandelbrotTS.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/tspaces.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="MandelbrotTS.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target name="Mandel" depends="build">
+        <java classname="com.tu.tk1.Mandel" failonerror="true" fork="yes">
+            <classpath refid="MandelbrotTS.classpath"/>
+        </java>
+    </target>
+</project>

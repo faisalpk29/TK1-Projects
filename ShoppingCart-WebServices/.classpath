@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Faisal/WorkSpace/TK1WebServices/lib/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Faisal/WorkSpace/TK1WebServices/lib/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="D:/Faisal/WorkSpace/TK1WebServices/lib/jackson-core-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="D:/Faisal/WorkSpace/TK1WebServices/lib/jackson-jaxrs-1.9.2.jar"/>
+	<classpathentry kind="lib" path="D:/Faisal/WorkSpace/TK1WebServices/lib/jackson-mapper-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="D:/Faisal/WorkSpace/TK1WebServices/lib/jackson-xc-1.9.2.jar"/>
+	<classpathentry kind="lib" path="D:/Faisal/WorkSpace/TK1WebServices/lib/jersey-client-1.17.1.jar"/>
+	<classpathentry kind="lib" path="D:/Faisal/WorkSpace/TK1WebServices/lib/jersey-core-1.17.1.jar"/>
+	<classpathentry kind="lib" path="D:/Faisal/WorkSpace/TK1WebServices/lib/jersey-json-1.17.1.jar"/>
+	<classpathentry kind="lib" path="D:/Faisal/WorkSpace/TK1WebServices/lib/jersey-server-1.17.1.jar"/>
+	<classpathentry kind="lib" path="D:/Faisal/WorkSpace/TK1WebServices/lib/jersey-servlet-1.17.1.jar"/>
+	<classpathentry kind="lib" path="D:/Faisal/WorkSpace/TK1WebServices/lib/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Faisal/WorkSpace/TK1WebServices/lib/json-simple.jar"/>
+	<classpathentry kind="lib" path="D:/Faisal/WorkSpace/TK1WebServices/lib/jsr311-api-1.1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
